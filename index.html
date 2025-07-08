@@ -1,0 +1,892 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+
+amazon
+</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+*{
+margin:0px;
+font-family:Arial;
+border:border-box;
+}
+.navbar{
+height:65px;
+width:100%;
+background-color:#0f1111;
+color:white;
+padding:0px;
+display:flex;
+align-items:center;
+justify-content:space-evenly;       }
+.nav-logo{
+padding:5px;
+padding-right:2px;
+height:50px;
+width:120px;
+}
+
+.logo{
+height:49px;
+width:100%;
+background-image:url("https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg");
+display:flex;
+}
+.in{
+text-align:center;
+justify-content:center;
+align-items:center;
+display:flex;
+padding-bottom:6px;
+padding-right:5px;
+}
+.border{
+border:2px solid transparent; 
+}
+.border:hover{
+border:2px solid white;
+}
+.nav-address{
+padding:6px;
+border:2px solid transparent;
+}
+.nav-address:hover{
+border:2px solid white;
+}
+.add-1{
+color:#cccccc;
+font-size:15px;
+margin-left:15px;
+}
+.add-2{
+font-size:20px;
+margin-left:5px;
+font-weight:700;
+}
+.add-icon{
+display:flex;
+align-items:center;
+}
+.nav-search{
+display:flex;
+
+width:620px;
+height:40px;
+align-items:center;
+justify-content:space-evenly;
+border-radius:4px;
+}
+.nav-search:hover{
+border:2px solid orange;
+}
+.search-icon{
+height:37px;
+width:45px;
+justify-content:center;
+align-items:center;
+display:flex;
+color:#0f1111;
+font-size:1.2rem;
+background-color:#febd68;
+border-top-right-radius:4px;
+border-bottom-right-radius:4px;
+
+}
+.search-opt{
+font-size:15px;
+height:38px;
+width:50px;
+padding-bottom:2px;
+background-color:#f3f3f3;
+text-align:center;
+border-top-left-radius:4px;
+border-bottom-left-radius:4px;
+}
+.search-input{
+height:35px;
+width:100%;
+font-size:18px;
+
+border:none;
+
+}
+.lang{
+display:flex;
+height:50px;
+width:90px;
+align-items:center;
+border:2px solid transparent;
+}
+.wn{
+height:30px;
+width:44px;
+font-size:14px;
+background-color:#0f1111;
+color:white;
+border:2px solid transparent;
+}
+.lang:hover{
+border:2px solid white;
+}
+.flag{
+padding:2px;
+align-items:center;
+padding-top:5px;
+}
+.sign-in{
+height:50px;
+justify-content:center;
+align-items:center;
+padding-top:9px;
+border:2px solid transparent;
+
+}
+.sign-in:hover{
+border:2px solid white;
+
+}
+.hello{
+font-size:14px;
+margin-left:5px;
+}
+.list{
+background-color:#0f1111;
+color:white;
+border:2px solid transparent;
+font-size:18px;
+font-weight:700;
+align-items:left;
+justify-content:left;
+}
+
+.return{
+height:48px;
+width:80px;
+font-size:12px;
+border:2px solid transparent;
+align-items:center;
+justify-content:center;
+padding-top:5px;
+padding-left:15px;
+}
+.return:hover{
+border:2px solid white;
+}
+.order{
+font-size:15px;
+font-weight:600;
+}
+
+.nav-cart{
+display:flex;
+font-size:25px;
+align-items:center;
+border:2px solid transparent;
+height:54px;
+width:80px;
+justify-content:center;
+}
+.nav-cart:hover{
+border:2px solid white;
+}
+.cart{
+font-size:18px;
+font-weight:600;
+padding-top:6px;
+}
+.items{
+height:39px;
+width:100%;
+background-color:#232F3E;
+color:white;
+justify-content:space-evenly;
+display:flex;
+align-items:center;
+}
+.items-all{
+font-size:25px;
+display:flex;
+margin:5px;
+padding:5px;
+align-items:center;
+justify-content:center;
+border:2px solid transparent;
+}
+.items-all:hover{
+border:2px solid white;
+}
+.all{
+font-size:15px;
+align-items:center;
+justify-content:center;
+display:flex;
+padding-left:2px;
+}
+.items-fresh{
+height:39px;
+width:52px;
+
+border:2px solid transparent;
+align-items:center;
+justify-content:center;
+display:flex;
+}
+.items-fresh:hover{
+border:2px solid white;
+}
+.span{
+
+font-size:14px;
+
+}
+.items-mxp{
+height:39px;
+width:74px;
+justify-content:center;
+align-items:center;
+border:2px solid transparent;
+display:flex;
+
+
+}
+.items-mxp:hover{
+border:2px solid white;
+}
+.items-sell{
+height:39px;
+width:25px;
+justify-content:center;
+align-items:center;
+display:flex;
+border:2px solid transparent;
+padding-right:5px;
+padding-left:5px;
+}
+.items-sell:hover{
+border:2px solid white;
+}
+.items-best{
+height:39px;
+width:80px;
+justify-content:center;
+align-items:center;
+display:flex;
+border:2px solid transparent;
+
+}
+.items-best:hover{
+border:2px solid white;
+
+}
+.items-mobile{
+height:39px;
+width:60px;
+justify-content:center;
+align-items:center;
+display:flex;
+border:2px solid transparent;
+
+}
+.items-mobile:hover{
+border:2px solid white;
+}
+.items-prime{
+height:39px;
+width:58px;
+justify-content:center;
+align-items:center;
+display:flex;
+border:2px solid transparent;
+
+}
+.items-prime:hover{
+border:2px solid white;
+}
+.sp{
+background-color:#232F3E;
+font-size:14px;
+color:white;
+border:transparent;
+}
+.items-T{
+height:39px;
+width:96px;
+justify-content:center;
+align-items:center;
+display:flex;
+
+
+border:2px solid transparent;
+
+}
+.items-T:hover{
+border:2px solid white;
+}
+.items-C{
+height:39px;
+width:120px;
+justify-content:center;
+align-items:center;
+display:flex;
+border:2px solid transparent;
+}
+.items-C:hover{
+border:2px solid white;
+}
+.s{font-size:14px
+}
+.items-N{
+height:39px;
+width:98px;
+justify-content:center;
+align-items:center;
+display:flex;
+border:2px solid transparent;
+
+}
+.items-N:hover{
+border:2px solid white;
+}
+.items-f{
+height:39px;
+width:56px;
+justify-content:center;
+align-items:center;
+display:flex;
+border:2px solid transparent;
+
+}
+.items-f:hover{
+border:2px solid white;
+}
+
+.items-a{
+height:39px;
+width:88px;
+justify-content:center;
+align-items:center;
+display:flex;
+border:2px solid transparent;
+
+}
+.items-a:hover{
+border:2px solid white;
+}
+.items-e{
+height:39px;
+width:76px;
+justify-content:center;
+align-items:center;
+display:flex;
+border:2px solid transparent;
+}
+.items-e:hover{
+border:2px solid white;
+
+}
+.items-h{
+height:39px;
+width:108px;
+align-items:center;
+justify-content:center;
+display:flex;
+border:2px solid transparent;
+}
+.items-h:hover{
+border:2px solid white;
+
+}
+.items-comp{
+height:39px;
+width:76px;
+align-items:center;
+justify-content:center;
+display:flex;
+border:2px solid transparent;
+
+}
+.items-comp:hover{
+border:2px solid white;
+}
+.items-car{
+height:39px;
+width:108px;
+align-items:center;
+justify-content:center;
+display:flex;
+border:2px solid transparent;
+
+}
+.items-car:hover{
+border:2px solid white;
+}
+.items-book{
+height:39px;
+width:62px;
+align-items:center;
+justify-content:center;
+display:flex;
+border:2px solid transparent;
+
+}
+.items-book:hover{
+border:2px solid white;
+}
+#adds{
+height:400px;
+width:100%;
+background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/img23/Consumables/X-GL/Feb5/PC_Hero_1_3000._CB582457311_.jpg");
+background-size:cover;
+
+
+}
+.left{
+height:55px;
+display:flex;
+font-size:50px;
+color:white;
+padding-top:100px;
+padding-left:25px;
+}
+.right{
+
+align-items:right;
+justify-content:right;
+display:flex;
+font-size:50px;
+padding-left:1400px;
+}
+h3{
+font-size:21px;
+}
+.divA{
+height:420px;
+width:320px;
+background-color:white;
+margin-top:100px;
+margin-left:25px;
+padding:20px;
+
+}
+.img{
+height:100px;
+widht:165px;
+display:flex;
+padding:10px;
+align-items:center;
+justify-content:center;
+gap:10px;
+}
+
+.desc{
+margin:0px;
+padding-top:0px;
+align-items:left;
+justify-content:left;
+display:flex;
+gap:90px;
+padding-left:10px;
+font-size:14px;
+}
+.desc2{
+gap:60px;
+display:flex;
+font-size:14px;
+padding-left:10px;
+}
+.desc3{
+padding-right:10px;
+font-size:14px;
+}
+.A1{
+
+display:flex;
+align-items:left;
+justify-content:space-evenly;
+
+
+}
+.divB{
+height:420px;
+width:320px;
+background-color:white;
+margin-top:100px;
+margin-left:25px;
+padding:20px;
+
+}
+.desc4{
+display:flex;
+gap:10px;
+font-size:14px;
+padding-left:10px;
+}
+.desc5{
+
+font-size:14px;
+}
+.desc6{
+
+}
+.desc7{
+display:flex;
+gap:70px;
+font-size:14px;
+padding-left:10px;
+
+}
+.desc8{
+display:flex;
+gap:30px;
+font-size:14px;
+padding-left:10px;
+}
+.divC{
+height:100px;
+width:255px;
+background-color:white;
+margin-top:100px;
+margin-left:25px;
+margin-right:25px;
+padding:20px;
+
+font-size:25px;
+}
+.button{
+width:100%;
+align-items:center;
+justify-content:center;
+display:flex;
+margin-top:20px;
+background-color:rgb(255, 209, 71);
+padding:5px;
+
+border-radius:30px;
+font-size:14px;
+}
+.price{
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.box{
+height:25px;
+width:150px;
+display:flex;
+align-items:center;
+justify-content:center;
+background-color:lightgreen;
+font-size:14px;
+font-weight:600;
+}
+.coup{
+height:25px;
+width:225px;
+display:flex;
+align-items:left;
+justify-content:left;
+margin-left:10px;
+background-color:white;
+}
+.fry{
+width:280px;
+padding:15px;
+margin:25px;
+margin-right:25px;
+background-color:white;
+}
+.pic{
+text-align:center;
+height:200px;
+width:300px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+body{
+background-color:lightgrey;
+}
+</style>
+<body>
+<header>
+<div class="navbar">
+
+<div class="nav-logo border">
+<div class="logo">
+<img src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg" height="50px"
+width="100px"
+><div class="in">.in
+</div>
+
+</div>
+
+</div>
+
+<div class="nav-address">
+<p class="add-1">Delivering to Ahmedabad 380028 </p>
+<div class="add-icon">
+<i class="fa-solid fa-location-dot"></i>
+<p class="add-2">Update location</p>
+</div>
+</div>
+
+<div class="nav-search ">
+<select class="search-opt">
+<option> All </option>
+
+</select>
+<input placeholder= "Search Amazon" class="search-input">
+
+<div class="search-icon">
+<i class="fa-solid fa-magnifying-glass"></i>
+</div>
+</div>
+
+<div class="lang">
+<div class="flag">
+<img src="https://images.emojiterra.com/twitter/512px/1f1ee-1f1f3.png" height="30px" width="35px">
+</div>
+<select class="wn"><b>
+<option>
+EN
+</option></b>
+</select>
+</div>
+
+<div class="sign-in">
+<div class="hello">
+<p>Hello,sign in</p>
+</div>
+
+<select class="list">
+<option>Accounts & Lists</option>
+</select>
+
+</div>
+<div class="return">
+<p style=font-size:14px;> Returns </p>
+
+<p class="order"> & Orders </p>
+</div>
+
+<div class="nav-cart">
+
+<i class="fa-solid fa-cart-shopping"></i>
+<p class="cart" >Cart</p>
+
+</div>
+
+</div>
+
+<div class="items">
+<div class="items-all">
+<i class="fa-solid fa-bars"></i>
+<p class="all">All</p>
+</div>
+<div class="items-fresh">
+<p class="span"> Fresh </p>
+</div>
+<div class="items-mxp">
+<p class="span"> MX Player </p>
+</div>
+
+<div class="items-sell">
+<p class="span">Sell</p>
+</div>
+
+<div class="items-best">
+<p class="span">Bestsellers</p>
+</div>
+
+<div class="items-mobile">
+<p class="span">Mobiles</p>
+</div>
+<div class="items-prime">
+<select class="sp">
+<option>
+Prime
+</option>
+</select>
+</div>
+
+<div class="items-T">
+<p class="span">Today's Deals</p>
+</div>
+
+<div class="items-C">
+<p class="s">Customer Service</p>
+</div>
+<div class="items-N">
+<p class="span">New Releases</p>
+</div>
+
+<div class="items-f">
+<p class="span">Fashion</p>
+</div>
+
+<div class="items-a">
+<p class="span">Amazon Pay</p>
+</div>
+
+<div class="items-e">
+<p class="span">Electronics</p>
+</div>
+
+<div class="items-h">
+<p class="span">Home & Kitchen</p>
+</div>
+
+<div class="items-comp">
+<p class="span">Computers</p>
+</div>
+
+<div class="items-car">
+<p class="span">Car & Motorbike</p>
+</div>
+
+<div class="items-book">
+<p class="span">Books</p>
+</div>
+</div>
+<div id="adds">
+<div class="left">
+<i class="fa-solid fa-chevron-left"></i>
+<div class="right">
+<i class="fa-solid fa-chevron-right"></i>
+</div>
+</div>
+<div class="A1">
+<div class="divA">
+<h3>Appliances for your home | Up to 55% off</h3>
+<div class="img">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" height="100px" width="135px">
+
+
+<div class="img">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg" height="100px" width="135px">
+</div>
+</div>
+<div class="desc2">Air conditioners
+<div class="">Refrigerators
+</div>
+</div>
+<div class="img">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg" height="100px" width="135px"><br>
+
+<div class="img">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg" height="100px" width="135px">
+
+</div>
+</div>
+<div class="desc">Microwave
+<div class="desc3">Washing machine</div>
+</div>
+</div>
+<div class="A2">
+<div class="divB">
+<h3>Min. 40% off | Toys & Fun games | Amazon brands</h3>
+
+<div class="img">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/Baby_toys/baby/QC_PC_186x116_9._SY116_CB563558900_.jpg" height="100px" width="135px">
+<div class="img">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/Baby_toys/toys/QC_PC_186x116_15._SY116_CB541414575_.jpg" height="100px" width="135px">
+</div>
+</div>
+
+<div class="desc4">Min.50% off | Soft toys
+<div class="desc5">Min.40% off | Indoor games
+</div>
+</div>
+
+<div class="img">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/Baby_toys/toys/QC_PC_186x116_11._SY116_CB541414575_.jpg" height="100px" width="135px">
+<div class="img">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/Baby_toys/toys/QC_PC_186x116_16._SY116_CB541411275_.jpg" height="100px" width="135px">
+</div>
+</div>
+<div class="desc4">Min. 40% off | Ride ons
+<div class="desc5">Min. 50% off | Outdoor games
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="A3">
+<div class="divB">
+<h3>Revamp your home in style</h3><br>
+
+<div class="img">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg" height="100px" width="135px">
+<div class="img">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg" height="100px" width="135px">
+</div>
+</div>
+
+<div class="desc8">Cushion cover, bed-<br>sheets & more
+<div class="desc6">figurines, vases & more
+</div>
+</div>
+
+<div class="img">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg" height="100px" width="135px">
+<div class="img">
+<img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg" height="100px" width="135px">
+</div>
+</div>
+
+<div class="desc7">Home storage
+<div class="">Lighting solutions
+</div>
+</div>
+</div>
+</div>
+
+<div class="A4">
+<div class="divC">
+<h4>Sign in for your best experience</h4>
+<div class="button">Sign in securely
+</div>
+</div>
+
+<div class="fry">
+<div class="pic">
+<img src="https://images.philips.com/is/image/philipsconsumer/vrs_ea8c8c706159a41d8d52b231cfea50b62da2e55a?wid=314&hei=314&$jpglarge$" height="200px" width="250px">
+</div>
+<div class="detail">PHILIPS Air fryer NA231/00 with touch...
+<div class="price">
+<div class="box">Save ₹100</div>
+<div class="coup">with coupon
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</header>
+<script>
+const images = [
+    'https://images-eu.ssl-images-amazon.com/images/G/31/INSLGW/af_pc_2x._CB792409181_.jpg',
+    'https://images-eu.ssl-images-amazon.com/images/G/31/img23/Softlines_JWL_SH_GW_Assets/2024/BAU_BTF/Nov/Unrec/Shoes/1/30003._CB542120021_.jpg',
+    'https://images-eu.ssl-images-amazon.com/images/G/31/img23/GW/P42/Boult_3000x1200-PC._CB543542644_.jpg'
+];
+
+let current = 0;
+
+function changeBackground() {
+    const div = document.getElementById('adds');
+    current = (current + 1) % images.length;
+    div.style.backgroundImage = `url('${images[current]}')`;
+}
+setInterval(changeBackground, 5000);
+</script>
+</body>
+</html>
